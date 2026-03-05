@@ -1,0 +1,42 @@
+.carrousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0;
+
+    position: relative;
+    top: 170px;    
+
+}
+
+.carrousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+    border-top: 2px solid var(--color-carrousel);
+    border-bottom: 2px solid var(--color-carrousel) ;
+}
+
+.card-carrousel {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 50px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-carrousel);
+    font-family: var(--font-primary);
+    font-weight: 300;
+    font-size: 1rem ;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

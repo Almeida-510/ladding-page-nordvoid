@@ -1,0 +1,81 @@
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--color-back);
+    background-image: url(../images/vetor-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.121) inset;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container > h1 {
+    color: var(--color-font);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
+}
+
+.container > p {
+    color: var(--color-font-destaque);
+    font-family: var(--font-segundary);
+    font-size: 1em;
+    font-weight: 500;
+
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
+}
+
+.container > button {
+    height: 45px;
+    width: 40%;
+
+    background-color: var(--color-button);
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    transition: background-color 0.3s linear, border 0.3s linear;
+}
+
+.container > button:hover {
+    background-color: white;
+    border: 2px solid #bf1506b0;
+    box-shadow: 0px 0px 10px #bf1506b0;
+}
+
+.container > button:hover > a{
+    color: var(--color-font);
+}
+
+.container > button > a {
+    color: var(--color-back);
+    text-decoration: none;
+    font-family: var(--font-segundary);
+    font-weight: 400;
+    letter-spacing: 4px;
+
+    transition: color 0.5s ;
+
+}
+
+.hero-image {
+    width: 100%;
+    
+}
