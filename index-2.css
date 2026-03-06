@@ -1,7 +1,4 @@
-@import url("assets/styles/hero.css");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap');
-@import url(assets/animations/carrousel.css);
-@import url(assets/animations/copyAnimation.css);
+@import url(assets/styles/produto.css);
 
 :root {
     --color-font:#BF1506;
@@ -12,13 +9,15 @@
 
     --font-primary:"Oswald", sans-serif;
     --font-segundary:"Orbitron", sans-serif;
+
 }
 
 body {
     background-color: var(--color-back);
-    font-family: sans-serif;
+
 }
 
 main {
-    min-height: 100%;
+    min-height: 100vh;
+    
 }
