@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('assets/styles/grid-container.css');
+
+
+:root {
+    --back:#FF1A1A;
+    --button:#F21905;
+    --price:#8C1308;
+    --card-color:#FFFFFF;
+
+    --font-primary: "Poppins";
+}
+
+body {
+    background-color: var(--back);
+}
+
+main {
+    min-height: 100vh;
+    
+    background-image: url(assets/images/pattern-home.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
