@@ -4,18 +4,107 @@
     display: grid;
     grid-template-columns:90vw;
     gap: 20px;
+    
 }
 
 .card {
-    height: 120px;
+    height: 100px;
+    padding: 5px;
 
     grid-column: 1 / span 1;
 
     display: flex;
     flex-flow: row-reverse;
     justify-content: flex-end;
+    align-items: center;
+
+    background-color: var(--card-color);
+    border-radius: 20px;
+    box-shadow: 0px -3px 4px rgba(255, 255, 255, 0.47), 0px 4px 4px rgba(0, 0, 0, 0.347), 0px 3px 4px rgba(255, 255, 255, 0.532) inset, 0px -4px 4px rgba(0, 0, 0, 0.347) inset;
 }
 
 .card > img {
     height: 100%;
+    width: 101px;
+    border-radius: 20px;
+
+    box-shadow: unset 0px 0px 10px rgba(0, 0, 0, 0.277) ;
 }
+
+
+.card__container-copy {
+    flex: 1 0;
+    
+    padding: 10px;
+}
+
+.card__container-copy > p {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 0.6em;
+    padding: 5px 9px;
+}
+
+.copy__top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px;
+}
+
+.copy__top > h2 {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+    font-family: var(--font-primary);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.copy__top > div {
+    padding: 5px 12px;
+    
+    color: var(--card-color);
+    font-family: var(--font-primary);
+    font-size: 0.7em;
+    font-weight: bold;
+
+    background-image: linear-gradient(to top, #f2190556, #ff3a3a);
+    border-radius: 20px;
+}
+
+.copy__top > h2 > span {
+    font-size: 1.2em;
+}
+
+
+.copy__bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.copy__bottom > p {
+    color: var(--price);
+}
+
+.copy__bottom > a{
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--card-color);
+    background-color: var(--button);
+    border-radius: 20px;
+    padding: 5px;
+}
+
