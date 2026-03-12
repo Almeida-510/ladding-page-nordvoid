@@ -1,0 +1,36 @@
+.app__animation-container {
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-ani {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 90px;
+    width: 90px;
+    background-color: var(--back);
+    border-radius: 20px;
+    animation: 3s ease-in-out 3s infinite trocaFundo;
+}
+
+.animation {
+    animation: 3s ease-in-out 3s infinite trocaFundo;
+}
+
+@keyframes trocaFundo {
+    0% {
+        box-shadow: 5px 5px 3px transparent;
+    }
+    50% {
+        box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.445);
+    }
+    100% {
+        box-shadow: 5px 5px 3px transparent;
+    }
+}
