@@ -16,19 +16,32 @@
     width: 90px;
     background-color: var(--back);
     border-radius: 20px;
-    animation: 3s ease-in-out 3s infinite trocaFundo;
 }
 
-.animation {
-    animation: 3s ease-in-out 3s infinite trocaFundo;
+.animation-1 {
+    animation: trocaFundo 5s infinite ;
+}
+
+.animation-2 {
+    animation: trocaFundo 10s infinite 6s;
+}
+
+.animation-3 {
+    animation: trocaFundo 5s infinite 3s;
 }
 
 @keyframes trocaFundo {
     0% {
         box-shadow: 5px 5px 3px transparent;
     }
+    25% {
+        box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.480)
+    }
     50% {
-        box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.445);
+        box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.480);
+    }
+    75% {
+        box-shadow: 5px 5px 3px transparent;
     }
     100% {
         box-shadow: 5px 5px 3px transparent;
